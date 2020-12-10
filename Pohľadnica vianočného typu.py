@@ -31,7 +31,7 @@ while True:
     xd1 = canvas.create_line(xx+3, yy-3, xx+9, yy+3, fill='paleturquoise')
     xd2 = canvas.create_line(xx+9, yy-3, xx+3, yy+3, fill='paleturquoise')
     a = rnd.randrange(0, 285)
-    b = rnd.randrange(0, 300)
+    b = rnd.randrange(0, 300) 
     dh = canvas.create_line(a, b, a+12, b, fill='paleturquoise')
     dv = canvas.create_line(a+6, b-6, a+6, b+6, fill='paleturquoise')
     dd1 = canvas.create_line(a+3, b-3, a+9, b+3, fill='paleturquoise')
