@@ -13,4 +13,3 @@ for a in range(0, 20):
     canvas.create_line(x, y, x+100, y, width=3)
     x+=10
     y+=30
-    
