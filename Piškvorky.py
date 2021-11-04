@@ -63,7 +63,7 @@ def krizko(xy):
                 if sbc == 'xx' and scc == 'xx':
                     canvas.create_line(10, 125, 140, 125, fill='red', width=4, tags='vec')
                     print('Červený vyhral')
-                if sbb == 'xx' and saa == 'xx':
+                if sbb == 'xx' and sca == 'xx':
                     canvas.create_line(140, 140, 10, 10, fill='red', width=4, tags='vec')
                     print('Červený vyhral')
             else:
