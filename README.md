@@ -1,11 +1,3 @@
 Definitívne len inšpirácia k správnemu riešeniu
 
-
-
-
-
-
-
-
-
-Každopádne ak na to neviete prísť sami just make sure to change it a little bit.
+Just make sure to change it a little bit ak idete plagiárčiť
