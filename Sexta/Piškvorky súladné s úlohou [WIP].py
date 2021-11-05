@@ -120,7 +120,7 @@ def päť(x):
     canvas.create_line(250, 0, 250, 250, width=2)
     canvas.create_line(0, 250, 250, 250, width=2)
 
-global saa, sab, sac, sba, sbb, sbc, sca, scb, scc, a, b, c, sz, sad, sbd, scd, sda, sdb, sdc, sdd, sae, sbe, sce, sde, sea, seb, sec, sed, see
+global saa, sab, sac, sba, sbb, sbc, sca, scb, scc, a, b, c, sz, sad, sbd, scd, sda, sdb, sdc, sdd, sae, sbe, sce, sde, sea, seb, sec, sed, see, ctr
 a=0
 ctr=0
 saa=0
@@ -150,7 +150,7 @@ sec=0
 sed=0
 see=0
 def krizko(xy):
-    global saa, sab, sac, sba, sbb, sbc, sca, scb, scc, a, b, c, sz, sad, sbd, scd, sda, sdb, sdc, sdd, sae, sbe, sce, sde, sea, seb, sec, sed, see
+    global saa, sab, sac, sba, sbb, sbc, sca, scb, scc, a, b, c, sz, sad, sbd, scd, sda, sdb, sdc, sdd, sae, sbe, sce, sde, sea, seb, sec, sed, see, ctr
     x = xy.x
     y = xy.y
     if x <= 50:
@@ -580,7 +580,7 @@ def krizko(xy):
         elif y <= 150:
             if sdc == 0 and sz >= 4:
                 y = 125
-                sdc == 'xx'
+                sdc = 'xx'
                 if sdb == 'xx' and sdd == 'xx':
                     canvas.create_line(175, 60, 175, 190, width=4, fill='red', tags='vec')
                     print('Červený vyhral')
@@ -614,14 +614,156 @@ def krizko(xy):
         elif y <= 200:
             if sdd == 0 and sz >= 4:
                 y = 175
-                sdd == 'xx'
+                sdd = 'xx'
                 if sdc == 'xx' and sde == 'xx':
                     canvas.create_line(175, 110, 175, 240, width=4, fill='red', tags='vec')
-                    print('Červený vyhral')#aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    print('Červený vyhral')
+                if scd == 'xx' and sed == 'xx':
+                    canvas.create_line(110, 175, 240, 175, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if scc == 'xx' and see == 'xx':
+                    canvas.create_line(110, 110, 240, 240, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if sec == 'xx' and sce == 'xx':
+                    canvas.create_line(240, 110, 110, 240, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if sbb == 'xx' and scc == 'xx':
+                    canvas.create_line(60, 60, 190, 190, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if sdb == 'xx' and sdc == 'xx':
+                    canvas.create_line(175, 60, 175, 190, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if sbd == 'xx' and scd == 'xx':
+                    canvas.create_line(60, 175, 190, 175, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+            else:
+                y=500
+                a-=1
+        elif y <= 250:
+            if sde == 0 and sz >= 5:
+                y = 225
+                sde = 'xx'
+                if sce == 'xx' and see == 'xx':
+                    canvas.create_line(110, 225, 240, 225, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if sbe == 'xx' and sce == 'xx':
+                    canvas.create_line(60, 225, 190, 225, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if sbc == 'xx' and scd == 'xx':
+                    canvas.create_line(60, 110, 190, 240, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if sdc == 'xx' and sdd == 'xx':
+                    canvas.create_line(175, 110, 175, 240, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+            else:
+                y=500
+                a-=1
+    elif x <= 250:
+        x = 225
+        if y <= 50:
+            if sea == 0 and sz >= 5:
+                y = 25
+                sea = 'xx'
+                if sda == 'xx' and sca == 'xx':
+                    canvas.create_line(110, 25, 240, 25, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if sdb == 'xx' and scc == 'xx':
+                    canvas.create_line(110, 110, 240, 10, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if seb == 'xx' and sec == 'xx':
+                    canvas.create_line(225, 10, 225, 140, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+            else:
+                y=500
+                a-=1
+        elif y <= 100:
+            if seb == 0 and sz >= 5:
+                seb = 'xx'
+                y = 75
+                if sea == 'xx' and sec == 'xx':
+                    canvas.create_line(225, 10, 225, 140, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if scb == 'xx' and sdb == 'xx':
+                    canvas.create_line(110, 75, 240, 75, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if scd == 'xx' and sdc == 'xx':
+                    canvas.create_line(110, 190, 240, 60, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if sec == 'xx' and sed == 'xx':
+                    canvas.create_line(225, 60, 225, 190, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+            else:
+                y=500
+                a-=1
+        elif y <= 150:
+            if sec == 0 and sz >= 5:
+                y=125
+                sec = 'xx'
+                if seb == 'xx' and sed == 'xx':
+                    canvas.create_line(225, 60, 225, 190, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if sea == 'xx' and seb == 'xx':
+                    canvas.create_line(225, 10, 225, 140, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if sca == 'xx' and sdb == 'xx':
+                    canvas.create_line(110, 10, 240, 140, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if scc == 'xx' and sdc == 'xx':
+                    canvas.create_line(110, 125, 240, 125, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if sce == 'xx' and sdd == 'xx':
+                    canvas.create_line(110, 240, 240, 110, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if sed == 'xx' and see == 'xx':
+                    canvas.create_line(225, 110, 225, 240, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+            else:
+                y=500
+                a-=1
+        elif y <= 200:
+            if sed == 0 and sz >= 5:
+                y = 175
+                sed = 'xx'
+                if sec == 'xx' and see == 'xx':
+                    canvas.create_line(225, 110, 225, 240, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if seb == 'xx' and sec == 'xx':
+                    canvas.create_line(225, 60, 225, 190, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if scb == 'xx' and sdc == 'xx':
+                    canvas.create_line(110, 60, 240, 190, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if scd == 'xx' and sdd == 'xx':
+                    canvas.create_line(110, 175, 240, 175, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+            else:
+                y=500
+                a-=1
+        elif y <= 250:
+            if see == 0 and sz >= 5:
+                y = 225
+                see = 'xx'
+                if  sec == 'xx' and sed == 'xx':
+                    canvas.create_line(225, 110, 225, 240, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if scc == 'xx' and sdd == 'xx':
+                    canvas.create_line(110, 110, 240, 240, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+                if sce == 'xx' and sde == 'xx':
+                    canvas.create_line(110, 225, 240, 225, width=4, fill='red', tags='vec')
+                    print('Červený vyhral')
+            else:
+                y=500
+                a-=1
+    else:
+        x=1000
+        a-=1
     canvas.create_line(x-24, y-24, x+24, y+24, width=2, fill='red', tags='vec')
     canvas.create_line(x+24, y-24, x-24, y+24, width=2, fill='red', tags='vec')
+    if x<500 and y<500:
+        ctr+=1
 def kruzko(xy):
-    global saa, sab, sac, sba, sbb, sbc, sca, scb, scc, a, b, c, sz, sad, sbd, scd, sda, sdb, sdc, sdd, sae, sbe, sce, sde, sea, seb, sec, sed, see
+    global saa, sab, sac, sba, sbb, sbc, sca, scb, scc, a, b, c, sz, sad, sbd, scd, sda, sdb, sdc, sdd, sae, sbe, sce, sde, sea, seb, sec, sed, see, ctr
     x = xy.x
     y = xy.y
     if x <= 50:
@@ -766,24 +908,18 @@ def kruzko(xy):
                 y=500
                 a+=1
     canvas.create_oval(x-25, y-25, x+25, y+25, width=2, outline='blue', tags='vec')
+    if x<500 and y<500:
+        ctr+=1
 def aa(xy):
-    global saa, sab, sac, sba, sbb, sbc, sca, scb, scc, a, b, ctr, sz, sad, sbd, scd, sda, sdb, sdc, sdd, sae, sbe, sce, sde, sea, seb, sec, sed, see
+    global saa, sab, sac, sba, sbb, sbc, sca, scb, scc, a, b, ctr, sz, sad, sbd, scd, sda, sdb, sdc, sdd, sae, sbe, sce, sde, sea, seb, sec, sed, see, ctr
     if a == 0:
         krizko(xy)
         a += 1
     else:
         kruzko(xy)
         a -= 1
-    ctr += 1
-    if sz == 3:
-        if ctr == 9:
-            print('Remíza')
-    if sz == 4:
-        if ctr == 16:
-            print('Remíza')
-    if sz == 5:
-        if ctr == 25:
-            print('Remíza')
+    if ctr == sz*sz:
+        print('Remíza')
 canvas.create_text(370, 30, text='Piškvorky', font='arial 30')
 canvas.create_text(370, 80, text='Hoď tam 3 pre 3x3 rozmer, zvyšok chápeš')
 canvas.create_text(370, 100, text='Ľavým hoď križok alebo kružok')
