@@ -8,7 +8,7 @@ def bruh(xy):
     x=xy.x
     y=xy.y
     if y<200:
-        c.create_rectangle(x, y, x+20, y+20, fill='blue', outline='blue',tags='yes')
+        c.create_rectangle(x, y, x-20, y-20, fill='blue', outline='blue',tags='yes')
     else:
         c.create_oval(x, y, x+20, y+20, fill='yellow', outline='yellow', tags='yes')
 
