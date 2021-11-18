@@ -17,3 +17,4 @@ def gon(nah):
 
 c.bind('<Button-1>',bruh)
 c.bind_all('r',gon)
+print('rkom odstrániť')
