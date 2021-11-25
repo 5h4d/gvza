@@ -56,6 +56,6 @@ def yes():
 yes()
 c.create_text(170, 490, text='r-kom reset')
 def dt(i):
-    c.delete(all)
+    c.delete('a')
     yes()
 c.bind_all('r',dt)
