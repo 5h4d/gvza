@@ -6,15 +6,17 @@ c.pack()
 
 c.create_text(350, 10, text="wespe!")
 score=0
-vitu=0
 c.create_text(660,10,text=score,tags='sc')
 def burh():
-    global x,y,vitu
+    global x,y,score
     c.delete('crcl')
     c.create_line(x+10,y+10,x+40,y+40,fill='red',width=3,tags='geki')
     c.create_line(x+40,y+10,x+10,y+40,fill='red',width=3,tags='geki')
+    c.delete('sc')
+    score-=300
+    c.create_text(660,10,text=score,tags='sc')
 def ba():
-    global x,y,score,vitu
+    global x,y,score
     x=rng(0,650)
     y=rng(10,650)
     c.delete('crcl')
