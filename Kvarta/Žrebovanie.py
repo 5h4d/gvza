@@ -8,4 +8,3 @@ canvas.create_text(50, 10, text=random.randint(1, 49))
 canvas.create_text(70, 10, text=random.randint(1, 49))
 canvas.create_text(90, 10, text=random.randint(1, 49))
 canvas.create_text(110, 10, text=random.randint(1, 49))
-
