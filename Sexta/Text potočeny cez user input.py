@@ -6,8 +6,7 @@ def sus(xy):
     x=xy.x
     y=xy.y
     angil=360/int(pocte.get())
-    cnt=int(len(amogus.get())/2)
-    medzki='      '*cnt
+    medzki='    '*int(len(amogus.get()))
     for ඞ in range(0,int(pocte.get())):
         c.create_text(x,y,text=medzki+amogus.get(),angle=angil,fill=clr.get(),font='arial 20')
         angil+=360/int(pocte.get())
