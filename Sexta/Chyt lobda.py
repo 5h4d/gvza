@@ -9,10 +9,13 @@ xx=0
 f=0
 def ඞ():
     global x
-    lobda=c.create_oval(x-5,0,x+5,10,fill='red',tags='bda')
+    c.create_oval(x-5,0,x+5,10,fill='red',tags='bda')
 def paddle(xx):
     c.create_rectangle(xx-15,370,xx+15,375,fill='blue',tags='shalla')
-skoe=c.create_text(680,20,text=bruh)
+def ඞඞ():
+    global bruh
+    c.delete('sk')
+    c.create_text(680,20,text=bruh,tags='sk')
 
 def kruhek():
     global x
@@ -32,17 +35,17 @@ def mvmnt():
     if f==37:
         if xx-15<x<xx+15:
             bruh+=1
-            skoe
+            ඞඞ()
             f=0
             c.after(500,kruhek)
         else:
-            bruh-=5
+            bruh-=3
             c.create_text(350,200,text='L',font='arial 40',tags='yis')
             c.after(100, c.delete('yis'))
             f=0
-            skoe
+            ඞඞ()
             kruhek()
     else:
-        c.after(10,mvmnt)
+        c.after(5,mvmnt)
 mvmnt()
 c.bind('<Motion>',kurzir)
