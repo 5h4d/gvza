@@ -40,12 +40,22 @@ def mvmnt():
             c.after(500,kruhek)
         else:
             bruh-=3
-            c.create_text(350,200,text='L',font='arial 40',tags='yis')
-            c.after(100, c.delete('yis'))
             f=0
             ඞඞ()
-            kruhek()
+            if bruh>=0:
+                kruhek()
+            else:
+                c.delete('all')
+                c.create_text(350,200,text='L',font='arial 50')
+                
     else:
         c.after(5,mvmnt)
-mvmnt()
+kruhek()
+def agin(a):
+    c.delete('all')
+    f=0
+    xx=0
+    bruh=int(0)
+    kruhek()
 c.bind('<Motion>',kurzir)
+c.bind_all('r',agin)
