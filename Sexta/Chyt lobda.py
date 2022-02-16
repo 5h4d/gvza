@@ -1,3 +1,5 @@
+#tak akoby jednak som to celé prerobil a mimo toho 5,8 a z časti 9
+
 import tkinter as tk
 import random
 c=tk.Canvas(height=400, width=700)
@@ -47,15 +49,16 @@ def mvmnt():
             else:
                 c.delete('all')
                 c.create_text(350,200,text='L',font='arial 50')
+                c.create_text(350, 240,text='r-ko keď tak', font='arial 7')
                 
     else:
         c.after(5,mvmnt)
 kruhek()
 def agin(a):
+    bruh=0
     c.delete('all')
     f=0
     xx=0
-    bruh=int(0)
     kruhek()
 c.bind('<Motion>',kurzir)
 c.bind_all('r',agin)

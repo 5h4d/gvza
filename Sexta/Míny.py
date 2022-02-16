@@ -3,133 +3,141 @@ import random as rnd
 c=tk.Canvas(height=240, width=200)
 c.pack()
 
+try:
+    diff=int(input("Kelo bomba?(5): "))
+except(SyntaxError,ValueError):
+    diff=5
 
 merek=0
 for bruh in range(6):
     c.create_line(0,merek,200,merek)
     c.create_line(merek,0,merek,240)
     merek+=40
+    
+bombi=rnd.sample(['aa','ab','ac','ad','ae','af','ba','bb','bc','bd','be','bf','ca','cb','cc','cd','ce','cf','da','db','dc','dd','de','df','ea','eb','ec','ed','ee','ef'],k=diff)
 
-if rnd.randrange(2)==1:
+if 'aa' in bombi:
     aa=1
 else:
     aa=0
-if rnd.randrange(2)==1:
+if 'ab' in bombi:
     ab=1
 else:
     ab=0
-if rnd.randrange(2)==1:
+if 'ac' in bombi:
     ac=1
 else:
     ac=0
-if rnd.randrange(2)==1:
+if 'ad' in bombi:
     ad=1
 else:
     ad=0
-if rnd.randrange(2)==1:
+if 'ae' in bombi:
     ae=1
 else:
     ae=0
-if rnd.randrange(2)==1:
+if 'af' in bombi:
     af=1
 else:
     af=0
-if rnd.randrange(2)==1:
+if 'ba' in bombi:
     ba=1
 else:
     ba=0
-if rnd.randrange(2)==1:
+if 'bb' in bombi:
     bb=1
 else:
     bb=0
-if rnd.randrange(2)==1:
+if 'bc' in bombi:
     bc=1
 else:
     bc=0
-if rnd.randrange(2)==1:
+if 'bd' in bombi:
     bd=1
 else:
     bd=0
-if rnd.randrange(2)==1:
+if 'be' in bombi:
     be=1
 else:
     be=0
-if rnd.randrange(2)==1:
+if 'bf' in bombi:
     bf=1
 else:
     bf=0
-if rnd.randrange(2)==1:
+if 'ca' in bombi:
     ca=1
 else:
     ca=0
-if rnd.randrange(2)==1:
+if 'cb' in bombi:
     cb=1
 else:
     cb=0
-if rnd.randrange(2)==1:
+if 'cc' in bombi:
     cc=1
 else:
     cc=0
-if rnd.randrange(2)==1:
+if 'cd' in bombi:
     cd=1
 else:
     cd=0
-if rnd.randrange(2)==1:
+if 'ce' in bombi:
     ce=1
 else:
     ce=0
-if rnd.randrange(2)==1:
+if 'cf' in bombi:
     cf=1
 else:
     cf=0
-if rnd.randrange(2)==1:
+if 'da' in bombi:
     da=1
 else:
     da=0
-if rnd.randrange(2)==1:
+if 'db' in bombi:
     db=1
 else:
     db=0
-if rnd.randrange(2)==1:
+if 'dc' in bombi:
     dc=1
 else:
     dc=0
-if rnd.randrange(2)==1:
+if 'dd' in bombi:
     dd=1
 else:
     dd=0
-if rnd.randrange(2)==1:
+if 'de' in bombi:
     de=1
 else:
     de=0
-if rnd.randrange(2)==1:
+if 'df' in bombi:
     df=1
 else:
     df=0
-if rnd.randrange(2)==1:
+if 'ea' in bombi:
     ea=1
 else:
     ea=0
-if rnd.randrange(2)==1:
+if 'eb' in bombi:
     eb=1
 else:
     eb=0
-if rnd.randrange(2)==1:
+if 'ec' in bombi:
     ec=1
 else:
     ec=0
-if rnd.randrange(2)==1:
+if 'ed' in bombi:
     ed=1
 else:
     ed=0
-if rnd.randrange(2)==1:
+if 'ee' in bombi:
     ee=1
 else:
     ee=0
-if rnd.randrange(2)==1:
+if 'ef' in bombi:
     ef=1
 else:
     ef=0
+
+
 def hiha():
     c.delete('all')
     c.create_text(100,120,text='L',font='arial 40')
@@ -244,6 +252,8 @@ def yes(xy):
             if cf==0:
                 ctl=be+bf+ce+de+df
                 c.create_text(100,220,text=ctl)
+            else:
+                hiha()
     elif x<160:
         if y<40:
             if da==0:
@@ -279,6 +289,8 @@ def yes(xy):
             if df==0:
                 ctl=ce+cf+de+ee+ef
                 c.create_text(140,220,text=ctl)
+            else:
+                hiha()
     elif x<200:
         if y<40:
             if ea==0:
@@ -320,7 +332,7 @@ def bobma(x,y,yis):
     c.create_line(x-15,y+15,x+15,y+15,width=5,tags=yis)
     c.create_line(x,y+15,x,y-15,width=5,tags=yis)
     c.create_polygon(x-2,y-14,x-2,y,x-17,y-9,fill='red',outline='red',tags=yis)
-vaa=vab=vac=vad=vae=vaf=vba=vbb=vbc=vbd=vbe=vbf=vca=vcb=vcc=vcd=vce=evcf=vda=vdb=vdc=vdd=vde=vdf=vea=veb=vec=ved=vee=vef=0
+vaa=vab=vac=vad=vae=vaf=vba=vbb=vbc=vbd=vbe=vbf=vca=vcb=vcc=vcd=vce=vcf=vda=vdb=vdc=vdd=vde=vdf=vea=veb=vec=ved=vee=vef=0
 def no(xy):
     global vaa,vab,vac,vad,vae,vaf,vba,vbb,vbc,vbd,vbe,vbf,vca,vcb,vcc,vcd,vce,vcf,vda,vdb,vdc,vdd,vde,vdf,vea,veb,vec,ved,vee,vef
     x=xy.x
@@ -374,7 +386,7 @@ def no(xy):
                 c.delete('vba')
                 vba=0
             else:
-                bobma(40,20,'vba')
+                bobma(60,20,'vba')
                 vba=1
         elif y<80:
             if vbb==1:
