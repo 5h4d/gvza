@@ -58,4 +58,4 @@ def agin(a):
     bruh=int(0)
     kruhek()
 c.bind('<Motion>',kurzir)
-c.bind_all('r',agin)
+s.bind_all('r',agin)
