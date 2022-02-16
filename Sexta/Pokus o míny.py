@@ -316,7 +316,229 @@ def yes(xy):
                 c.create_text(180,220,text=ctl)
             else:
                 hiha()
+def bobma(x,y,yis):
+    c.create_line(x-15,y+15,x+15,y+15,width=5,tags=yis)
+    c.create_line(x,y+15,x,y-15,width=5,tags=yis)
+    c.create_polygon(x-2,y-14,x-2,y,x-17,y-9,fill='red',outline='red',tags=yis)
+vaa=vab=vac=vad=vae=vaf=vba=vbb=vbc=vbd=vbe=vbf=vca=vcb=vcc=vcd=vce=evcf=vda=vdb=vdc=vdd=vde=vdf=vea=veb=vec=ved=vee=vef=0
 def no(xy):
-    
+    global vaa,vab,vac,vad,vae,vaf,vba,vbb,vbc,vbd,vbe,vbf,vca,vcb,vcc,vcd,vce,vcf,vda,vdb,vdc,vdd,vde,vdf,vea,veb,vec,ved,vee,vef
+    x=xy.x
+    y=xy.y
+    if x<40:
+        if y<40:
+            if vaa==1:
+                c.delete('vaa')
+                vaa=0
+            else:
+                bobma(20,20,'vaa')
+                vaa=1
+        elif y<80:
+            if vab==1:
+                c.delete('vab')
+                vab=0
+            else:
+                bobma(20,60,'vab')
+                vab=1
+        elif y<120:
+            if vac==1:
+                c.delete('vac')
+                vac=0
+            else:
+                bobma(20,100,'vac')
+                vac=1
+        elif y<160:
+            if vad==1:
+                c.delete('vad')
+                vad=0
+            else:
+                bobma(20,140,'vad')
+                vad=1
+        elif y<200:
+            if vae==1:
+                c.delete('vae')
+                vae=0
+            else:
+                bobma(20,180,'vae')
+                vae=1
+        elif y<240:
+            if vaf==1:
+                c.delete('vaf')
+                vaf=0
+            else:
+                bobma(20,220,'vaf')
+                vaf=1
+    elif x<80:
+        if y<40:
+            if vba==1:
+                c.delete('vba')
+                vba=0
+            else:
+                bobma(40,20,'vba')
+                vba=1
+        elif y<80:
+            if vbb==1:
+                c.delete('vbb')
+                vbb=0
+            else:
+                bobma(60,60,'vbb')
+                vbb=1
+        elif y<120:
+            if vbc==1:
+                c.delete('vbc')
+                vbc=0
+            else:
+                bobma(60,100,'vbc')
+                vbc=1
+        elif y<160:
+            if vbd==1:
+                c.delete('vbd')
+                vbd=0
+            else:
+                bobma(60,140,'vbd')
+                vbd=1
+        elif y<200:
+            if vbe==1:
+                c.delete('vbe')
+                vbe=0
+            else:
+                bobma(60,180,'vbe')
+                vbe=1
+        elif y<240:
+            if vbf==1:
+                c.delete('vbf')
+                vbf=0
+            else:
+                bobma(60,220,'vbf')
+                vbf=1
+    elif x<120:
+        if y<40:
+            if vca==1:
+                c.delete('vca')
+                vca=0
+            else:
+                bobma(100,20,'vca')
+                vca=1
+        elif y<80:
+            if vcb==1:
+                c.delete('vcb')
+                vcb=0
+            else:
+                bobma(100,60,'vcb')
+                vcb=1
+        elif y<120:
+            if vcc==1:
+                c.delete('vcc')
+                vcc=0
+            else:
+                bobma(100,100,'vcc')
+                vcc=1
+        elif y<160:
+            if vcd==1:
+                c.delete('vcd')
+                vcd=0
+            else:
+                bobma(100,140,'vcd')
+                vcd=1
+        elif y<200:
+            if vce==1:
+                c.delete('vce')
+                vce=0
+            else:
+                bobma(100,180,'vce')
+                vce=1
+        elif y<240:
+            if vcf==1:
+                c.delete('vcf')
+                vcf=0
+            else:
+                bobma(100,220,'vcf')
+                vcf=1
+    elif x<160:
+        if y<40:
+            if vda==1:
+                c.delete('vda')
+                vda=0
+            else:
+                bobma(140,20,'vda')
+                vda=1
+        elif y<80:
+            if vdb==1:
+                c.delete('vdb')
+                vdb=0
+            else:
+                bobma(140,60,'vdb')
+                vdb=1
+        elif y<120:
+            if vdc==1:
+                c.delete('vdc')
+                vdc=0
+            else:
+                bobma(140,100,'vdc')
+                vdc=1
+        elif y<160:
+            if vdd==1:
+                c.delete('vdd')
+                vdd=0
+            else:
+                bobma(140,140,'vdd')
+                vdd=1
+        elif y<200:
+            if vde==1:
+                c.delete('vde')
+                vde=0
+            else:
+                bobma(140,180,'vde')
+                vde=1
+        elif y<240:
+            if vdf==1:
+                c.delete('vdf')
+                vdf=0
+            else:
+                bobma(140,220,'vdf')
+                vdf=1
+    elif x<200:
+        if y<40:
+            if vea==1:
+                c.delete('vea')
+                vea=0
+            else:
+                bobma(180,20,'vea')
+                vea=1
+        elif y<80:
+            if veb==1:
+                c.delete('veb')
+                veb=0
+            else:
+                bobma(180,60,'veb')
+                veb=1
+        elif y<120:
+            if vec==1:
+                c.delete('vec')
+                vec=0
+            else:
+                bobma(180,100,'vec')
+                vec=1
+        elif y<160:
+            if ved==1:
+                c.delete('ved')
+                ved=0
+            else:
+                bobma(180,140,'ved')
+                ved=1
+        elif y<200:
+            if vee==1:
+                c.delete('vee')
+                vee=0
+            else:
+                bobma(180,180,'vee')
+                vee=1
+        elif y<240:
+            if vef==1:
+                c.delete('vef')
+                vef=0
+            else:
+                bobma(180,220,'vef')
+                vef=1
 c.bind("<Button-1>",yes)
-c.bind("<Button-2>",no)
+c.bind("<Button-3>",no)
