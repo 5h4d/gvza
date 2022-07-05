@@ -201,7 +201,7 @@ def krizko(xy):
                     canvas.create_line(10, 125, 140, 125, fill='red', width=4, tags='vec')
                     print('Červený vyhral')
                 if sbb == 'xx' and sca == 'xx':
-                    canvas.create_line(140, 140, 10, 10, fill='red', width=4, tags='vec')
+                    canvas.create_line(10, 140, 140, 10, fill='red', width=4, tags='vec')
                     print('Červený vyhral')
                 if sab == 'xx' and sad == 'xx':
                     canvas.create_line(25, 60, 25, 190, width=4, fill='red', tags='vec')
