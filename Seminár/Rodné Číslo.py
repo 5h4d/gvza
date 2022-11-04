@@ -12,6 +12,8 @@ while True:
             else:
                 print('Dátum narodenia: '+rc[4:6]+'.'+str(m)+'.19'+rc[:2])
             break
+    else:
+        print('Zlý formát bby')
 if int(rc[2:4])<=12:
     print('Pohlavie: M')
 else:
