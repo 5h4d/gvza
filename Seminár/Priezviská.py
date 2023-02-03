@@ -4,7 +4,7 @@ def guests(foo):
     muzi=[]
     for i in range(len(foo)):
         tmp=foo[i]
-        if tmp[-1:]=='á':
+        if tmp[-1]=='á':
             zeny.append(foo[i])
         else:
             muzi.append(foo[i])
