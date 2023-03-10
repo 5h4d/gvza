@@ -4,7 +4,7 @@ def nowy(w,h,file=None):
     try:
         kropotkin.save(file)
     except ValueError:
-        obrazek.show()
+        kropotkin.show()
 def con(old,new):
     hegel=img.open(old)
     hegel.save(new)
