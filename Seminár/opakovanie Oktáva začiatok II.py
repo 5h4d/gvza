@@ -30,25 +30,34 @@ def balonka(xy):
 ##########################################################################################
 
 def res(xy):
+    global a,angle,stop
     c.delete('setritka')
     a=3
     angle=0
+    stop=1
 def setrofka():
-    global coje, angle, a
-    c.create_text(rng(500),rng(500),text=coje.get(),font='arial '+str(a),tags='setritka',angle=angle)
+    global coje, angle, a,stop
+    c.create_text(rng(500),rng(500),text=coje.get(),font='arial '+str(a),tags='setritka',angle=angle,fill=pick(farbi))
     angle+=10
     a+=2
-    print('a')
-    setrofka()
+    c.update()
+    sleep(.5)
+    if stop!=1:
+        setrofka()
 def setric():
-    global coje, a, angle
+    global coje, a, angle,stop
     coje=tk.Entry()
     coje.pack()
+    c.update()
     c.pack()
     c.bind('<Button-1>',res)
     a=3
     angle=0
+    stop=0
     setrofka()
-#NEJDE TO A JE MI TO JEDNO IDEM DOMOV
 
-#TÝM PÁDOM NEPÔJDE ANI TO TRETIE TAKŽE KAŠĽAŤ
+
+################################################################
+##################TITULKY ČI ČO TO BOLO#########################
+################################################################
+
