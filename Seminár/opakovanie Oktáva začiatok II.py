@@ -8,6 +8,9 @@ c.pack()
 
 farbi=['red','yellow','blue','magenta','green']
 def lodenky():
+    b.destroy()
+    bb.destroy()
+    c.update()
     c.create_rectangle(0,250,500,500,fill='lightblue',outline='lightblue')
     c.bind('<Button-1>',balonka)
 def balonka(xy):
@@ -45,6 +48,9 @@ def setrofka():
     if stop!=1:
         setrofka()
 def setric():
+    b.destroy()
+    bb.destroy()
+    c.update()
     global coje, a, angle,stop
     coje=tk.Entry()
     coje.pack()
@@ -56,8 +62,15 @@ def setric():
     stop=0
     setrofka()
 
-
 ################################################################
 ##################TITULKY ČI ČO TO BOLO#########################
 ################################################################
 
+
+################################################################
+########################TLAČÍTKA################################
+################################################################
+b=tk.Button(text="loďki", command=lodenky)
+b.place(x=200,y=250)
+bb=tk.Button(text="šetrič", command=setric)
+bb.place(x=300,y=250)
