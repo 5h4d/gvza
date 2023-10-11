@@ -31,3 +31,5 @@ print()
 yea=int(input("zadaj od: "))
 yae=int(input("zadaj do: "))
 print("toto nejde a neviem ako to spraviť, to je celkom smola, čo?")
+for i in range(yea,yae+1):
+    print(niečo čo to spraí pls)
