@@ -13,7 +13,7 @@ for i in range(500):
     c.create_polygon(x-10,y+25,x,y,x+10,y+25,x-15,y+10,x+15,y+10,fill='gold')
 
 """ŠTVORCE"""
-"""
+
 c=Canvas(Toplevel(),height=500,width=500)
 c.pack()
 
@@ -28,7 +28,9 @@ c.create_text(x-5,y-5,text="A")
 c.create_text(x+a1+5,y-5,text="B")
 c.create_text(x+a1+4,y+a1+4,text="C")
 c.create_text(x-4,y+a1+4,text="D")
-"""
+c.create_text(x+a1+13,y+a1/2,text=a1)
+c.create_text(x+a1/2,y+(a1-a2)/2+a2+5,text=a2)
+
 """VIAC ŠTVORCE"""
 
 c=Canvas(Toplevel(),height=500,width=500)
