@@ -6,7 +6,7 @@ from math import sqrt
 colors = list(colors.cnames.keys())
 
 
-def trojuholniky(a: tuple[int, int], b: tuple[int, int], c: tuple[int, int]):
+def trojuholniky(a: tuple[int], b: tuple[int], c: tuple[int]):
     """Rekurzívna funkcia vykresľujúca trojuholníky na základe súradníc najväčšieho"""
     if (
         min(
