@@ -2,11 +2,12 @@ from tkinter import Canvas
 from matplotlib import colors
 from random import choice
 from math import sqrt
+from typing import Tuple
 
 colors = list(colors.cnames.keys())
 
 
-def trojuholniky(a: tuple[int], b: tuple[int], c: tuple[int]) -> None:
+def trojuholniky(a: Tuple[int, int], b: Tuple[int, int], c: Tuple[int, int]) -> None:
     """Rekurzívna funkcia vykresľujúca trojuholníky na základe súradníc najväčšieho"""
     if (
         min(
