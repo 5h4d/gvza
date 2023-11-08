@@ -1,13 +1,14 @@
 from tkinter import Canvas
 from random import randint
+from typing import List, Tuple
 
 k = int(input("k = "))
-pokusy: list[list[tuple[int]]] = []  # Zoznam obsahujúci všetkých 10 pokusov
+pokusy: List[List[Tuple[int, int]]] = []  # Zoznam obsahujúci všetkých 10 pokusov
 
 for i in range(
     10
 ):  # Vytvorenie individuálnych mincí v dvojiciach po hodnote a horizontálnej pozícií
-    mince: list[tuple[int]] = []
+    mince: List[Tuple[int, int]] = []
     x = 2
     while sum(minca[0] for minca in mince) < k:
         mince.append((randint(1, 4), x))
