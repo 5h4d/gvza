@@ -7,7 +7,7 @@ from typing import Tuple
 colors = list(colors.cnames.keys())
 
 
-def trojuholniky(a: Tuple[int, int], b: Tuple[int, int], c: Tuple[int, int]) -> None:
+def trojuholniky(a: Tuple[int], b: Tuple[int], c: Tuple[int]) -> None:
     """Rekurzívna funkcia vykresľujúca trojuholníky na základe súradníc najväčšieho"""
     if (
         min(
