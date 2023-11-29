@@ -11,3 +11,5 @@ bodi=[(250+200*cos(radians(i*360/n)),
 for i,j in bodi:
     for x,y in bodi:
         c.create_line(i,j,x,y)
+
+c.mainloop()
