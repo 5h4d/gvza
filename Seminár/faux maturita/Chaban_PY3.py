@@ -1,4 +1,4 @@
-čísla: tuple[int,int,int,int,int,int,int] = tuple(int(input()) for x in range(7))
+čísla: tuple[int, ...] = tuple(int(input()) for x in range(7))
 
 max=čísla[0]
 min=čísla[0]
