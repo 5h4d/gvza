@@ -131,3 +131,4 @@ def igra(xy):
                     
 
 cnv.bind('<Button-1>',igra)
+cnv.mainloop()
