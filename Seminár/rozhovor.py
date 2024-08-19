@@ -7,7 +7,7 @@ while True:
         break
     except ValueError:
         print('rok ty tupe vajco')
-vek=2022-rok
+vek=2024-rok
 print('Ah yes, čiže máš '+str(vek)+' rokov, toľko má aj ' +rng.choice(('Gregor', 'Maroš', 'Ignác', 'Istvany', 'Burgir')))
 dm = input('Mimochodom, aký máš názor na drogériu? ')
 if dm=='excelentná vec':
